@@ -1,0 +1,12 @@
+{
+  "name": "dante-quiz",
+  "version": "1.0.0",
+  "description": "A static recreation of the 4degreez.com Dante's Inferno Test",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "serve": "python3 -m http.server 8000"
+  },
+  "license": "MIT"
+}

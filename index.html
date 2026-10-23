@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dante's Inferno Test - Impurity, Sin, and Damnation</title>
+<meta name="description" content="Test your impurity, find out which level of Dante's hell you will be spending eternity in.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="main">
+
+  <header>
+    <h1>Dante's Inferno Test</h1>
+    <p class="subtitle">Impurity, Sin&hellip; and Damnation</p>
+  </header>
+
+  <section id="intro">
+    <h2>A heavy thunder breaks the deep lethargy within your head&hellip;</h2>
+    <p class="indent">&hellip;causing you to upstart suddenly, like a person who by force is awakened.
+      Before you stands an enormous gate with an inscription that reads:</p>
+
+    <blockquote class="gate">
+      Through me the way into the suffering city,<br>
+      Through me the way to the eternal pain,<br>
+      Through me the way that runs among the lost.<br>
+      Justice urged on my high artificer;<br>
+      My maker was divine authority,<br>
+      The highest wisdom, and the primal love.<br>
+      Before me nothing but eternal things were made,<br>
+      And I endure eternally.<br>
+      <strong>Abandon every hope, ye who enter here.</strong>
+    </blockquote>
+
+    <p>This test is based on the description of Hell found in Dante's <cite>Divine Comedy</cite>.
+      Answer the questions below as honestly as you can and discover your fate. Based on your
+      answers, your purity will be judged and you will be banished to the appropriate level of
+      hell. Abandon all hope.</p>
+  </section>
+
+  <form id="quiz" novalidate>
+    <ol id="questions"></ol>
+    <div id="form-footer">
+      <p id="validation" role="alert" hidden></p>
+      <button type="submit" id="submit">Calculate Results</button>
+    </div>
+  </form>
+
+  <section id="results" hidden aria-live="polite">
+    <h2 id="verdict-heading"></h2>
+    <p id="verdict-line" class="verdict"></p>
+
+    <article id="level-detail"></article>
+
+    <h3>Here is how you matched up against all the levels</h3>
+    <p class="hint">Select a level to read what waits there.</p>
+    <table id="score-table">
+      <thead>
+        <tr><th scope="col">Level</th><th scope="col">Who are sent there?</th><th scope="col">Score</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="actions">
+      <button type="button" id="copy">Copy my result</button>
+      <button type="button" id="retake">Take the test again</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Dante's Inferno Test is based on Dante's <cite>Divine Comedy</cite>, written in the early 1300s
+      by Dante Alighieri. A recreation of the test originally published at 4degreez.com.</p>
+  </footer>
+
+</div>
+
+<div id="progress" aria-hidden="true"><div id="progress-bar"></div></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
